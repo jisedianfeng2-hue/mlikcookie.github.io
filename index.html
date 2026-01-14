@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mlik cookie | 少儿编程</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --fg: #ffffff;
+      --muted: #9aa0a6;
+      --accent: #5eead4;
+      --card: #151922;
+    }* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 80% -10%, #1f2937, transparent), var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 72px;
+  backdrop-filter: blur(12px);
+  background: rgba(11,13,16,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
+  z-index: 100;
+}
+
+header .logo {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+
+header nav a {
+  margin-left: 32px;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+header nav a:hover { color: var(--fg); }
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10vw;
+}
+
+.hero-content {
+  max-width: 720px
